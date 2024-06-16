@@ -1,7 +1,13 @@
 {{ define "main" }}
   {{ .Content }}
   {{ range where site.RegularPages "Type" "posts"}}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+    <div class="homepage-article">
+      <a class="homepage_article__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <p>
+        <span class="homepage_article__date">{{ .Params.date.Format "3 january, 2006"}}</span>
+        <div class="homepage_article__summary">{{ .Summary }}</div>
+      </p>
+    </div>
+    
   {{ end }}
 {{ end }}

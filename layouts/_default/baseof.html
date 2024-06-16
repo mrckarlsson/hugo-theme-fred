@@ -5,16 +5,25 @@
 </head>
 <body>
   <div class="wrapper">
+   <div class="main">
     <header>
       {{ partial "header.html" . }}
     </header>
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>    
-  </div>
+   </div>
+   <div class="hero">
+    {{ partial "hero.html" . }}
+   </div>
+
+    <div class="main">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      <footer>
+        {{ partial "footer.html" . }}
+      </footer>
+    </div>
+
+  </div>    
 
 </body>
 </html>
