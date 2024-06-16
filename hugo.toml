@@ -19,7 +19,7 @@ weight = 30
 
 [[menus.main]]
 name = 'About'
-pageRef = '/about'
+pageRef = '/pages/about'
 weight = 30
 
 [module]
