@@ -1,6 +1,11 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
+languageCode = 'sv_SE'
+defaultContentLanguage = "sv"
+defaultContentLang = "sv"
 title = 'My New Hugo Site'
+
+[params]
+    dateFormat = "02 Juni, 2006"
 
 
 [[menus.main]]

@@ -4,7 +4,9 @@
     <div class="homepage-article">
       <a class="homepage_article__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
       <p>
-        <span class="homepage_article__date">{{ .Params.date.Format "3 january, 2006"}}</span>
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format ":date_short" }}
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
         <div class="homepage_article__summary">{{ .Summary }}</div>
       </p>
     </div>
