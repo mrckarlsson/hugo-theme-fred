@@ -1,1 +1,7 @@
-# hugo-theme-fred
+# Theme Name
+
+## Features
+
+## Installation
+
+## Configuration
